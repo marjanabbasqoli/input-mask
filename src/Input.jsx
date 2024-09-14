@@ -29,7 +29,7 @@ const Input = () => {
 
 	const handleChange = (e) => {
 		setHint("");
-		setInput(e.target.value);
+		setInput(e.target.value.trimStart());
 	};
 
 	const handleTouch = (e) => {
